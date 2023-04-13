@@ -1,0 +1,21 @@
+CREATE TABLE IceCream (ID INTEGER PRIMARY KEY, Quantity INTEGER, Popularity numeric,Price Integer);
+
+Insert into IceCream VALUES (1,"Mint Chocolate Chip", 2, 1.50);
+Insert into IceCream VALUES (2,"Chocolate", 3,2);
+Insert into IceCream VALUES (3,"Vanilla", 4,2);
+Insert into IceCream VALUES (4,"Butter Pecan", 5,1);
+Insert into IceCream VALUES (5,"Superman", 6,3);
+Insert into IceCream VALUES (6,"Vanilla Bean", 7, 2);
+Insert into IceCream VALUES (7,"Rocky Road", 8,2);
+Insert into IceCream VALUES (8,"Neopolitan", 9, 3);
+Insert into IceCream VALUES (9,"Cookie Dough", 10, 1);
+Insert into IceCream VALUES (10,"Rum Raisin", 11, 8);
+Insert into IceCream VALUES (11,"Cookies n Cream", 12, 2);
+Insert into IceCream VALUES (12,"Coffee", 13,1);
+Insert into IceCream VALUES (13,"Fudge", 14, 6);
+Insert into IceCream VALUES (14,"Moose Tracks", 15, 4);
+Insert into IceCream VALUES (15,"Strawberry", 1, 4);
+
+SELECT * FROM IceCream ORDER by Popularity;  
+SELECT * FROM IceCream WHERE Popularity < 6 ORDER by Popularity;
+Select * From IceCream Where Price >3 Order by Popularity;
